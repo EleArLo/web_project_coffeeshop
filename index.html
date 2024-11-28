@@ -19,13 +19,110 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <!--Desde aqui inicio a poner el header-->
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo Cafetería Triple Espresso"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#recipes" class="nav__link">Recetas</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Reservar una mesa</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent"
+            >Café&nbsp;de&nbsp;especialidad</span
+          >
+          <br /><span>en&nbsp;Triple&nbsp;Peaks</span>
+        </h1>
+        <div class="header__span-accent"></div>
+        <div class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </div>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Imagen adentro de Cafetería"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div class="header__footer_content_hours">
+            <nav>
+              <ul class="header__list">
+                <li class="header__list-item">Horario:</li>
+                <li class="header__list-item">
+                  Lunes a Viernes (de 10:00h a 19:00h)
+                </li>
+                <li class="header__list-item">
+                  Sábados y Domingos (de 11:00h a 18:00h)
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__paragraph">
+            Avenida del Éxito 200, Ciudad Triple Peaks
+          </div>
+        </div>
+      </header>
+      <!--aqui inician la seccion de recetas de videos-->
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+        <section id="recipes" class="recipes">
+        <h2 class="recipes__title">Recetas</h2>
+        <p class="recipes__subtitle">
+          Echa un vistazo a las recetas que hemos reunido para que elabores tus
+          propios snacks.
+        </p>
+        <div class="recipes__videos">
+          <!-- Primer video -->
+          <div class="recipes__video-item">
+            <iframe
+              class="recipes__iframe"
+              id="ytplayer"
+              type="text/html"
+              src="https://www.youtube.com/embed/j6VlT_jUVPc"
+              title="Receta en Aeropress"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="recipes__video-caption">
+              <span>Receta en Aeropress</span>
+              <span>~5 min</span>
+            </div>
+          </div>
+
+          <!-- Segundo video -->
+          <div class="recipes__video-item">
+            <iframe
+              class="recipes__iframe"
+              id="ytplayer"
+              type="text/html"
+              src="https://www.youtube.com/embed/st571DYYTR8"
+              title="Receta en cafetera francesa"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="recipes__video-caption">
+              <span>Receta en cafetera francesa</span>
+              <span>~15 min</span>
+            </div>
+          </div>
+        </div>
+        <!--hasta aqui termina este proyecto segunda parte-->
+        <section id="reservation" class="reservation"></section>
       </main>
       <footer class="footer"></footer>
     </div>
+  </section>
     <!--ultimo div que envuelve la class page-->
   </body>
 </html>
