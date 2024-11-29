@@ -109,6 +109,7 @@
   color: #838383;
 }
 
+/*Todo esto esta mal y se debe de corregir porque no eran las clases, esto es del footer donde agregue los parrafos*/
 .header__footer_content_hours {
   margin-bottom: 40px;
   margin-left: 40px;
@@ -123,6 +124,9 @@
   margin-right: 80px;
   margin-bottom: 40px;
 }
+
+/*Todo esto esta mal y se debe de corregir porque no eran las clases, esto es del footer donde agregue los parrafos*/
+
 .content {
   background-color: #0a2750;
   background-image: url(../images/background_recipes.svg);
