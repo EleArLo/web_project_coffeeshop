@@ -51,7 +51,7 @@
 
 .header__title {
   max-width: 709px;
-  position: relative;
+  position: absolute;
   top: 183px;
   left: 80px;
   margin: 0;
@@ -59,7 +59,7 @@
   font-style: normal;
   font-size: 58px;
   font-weight: 500;
-  letter-spacing: -1px;
+  line-height: 72px;
 }
 
 .header__span-accent {
@@ -67,21 +67,26 @@
   font-family: "Noto Serif", Times New Roman, sans-serif;
   font-style: italic;
   font-weight: normal;
+  font-weight: 500;
   font-size: 58px;
   line-height: 72px;
+  letter-spacing: -1px;
   color: #2f80ed;
 }
 
 .header__description {
-  max-width: 683px;
   font-family: "Noto Serif", Times New Roman, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  position: relative;
+  max-width: 650px;
+  flex-wrap: wrap;
+  position: absolute;
   left: 80px;
-  top: 211px;
+  top: 360px;
+  margin: 0;
+  z-index: 2;
 }
 
 .header__image {
@@ -90,4 +95,17 @@
   right: 5px;
   width: 646px;
   height: 568px;
+}
+
+.header__footer {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__paragraph {
+  gap: 0;
+  margin: 0;
 }
