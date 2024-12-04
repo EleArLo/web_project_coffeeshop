@@ -258,11 +258,17 @@
   opacity: 0.7;
 }
 
-.form__checkbox {
+.form__label-checkbox {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
   justify-content: center;
-  padding-top: 32px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: auto;
+  border: 0;
+}
+
+.form__checkbox {
+  height: 12px;
+  width: 12px;
+  row-gap: 12px;
 }
