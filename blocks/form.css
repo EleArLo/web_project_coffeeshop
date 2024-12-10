@@ -2,14 +2,6 @@
   max-width: 385px;
 }
 
-/*se quita esta clase si encuentro la falla
-.form__container {
-  display: flex;
-  justify-content: center;
-  border: 0;
-}
-  */
-
 .form__fieldset {
   border: 0;
   padding: 0;

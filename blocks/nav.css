@@ -12,7 +12,8 @@
 .nav__logo {
   position: relative;
   top: 30px;
-  right: 30px;
+  left: 30px;
+  margin-bottom: 183px;
   height: 39px;
   width: 105px;
 }
