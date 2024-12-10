@@ -6,9 +6,8 @@
     <meta name="description" content="Coffee Shop" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Elena Arceo" />
-    <title>Document</title>
+    <title>Cafetería</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +33,7 @@
               <a href="#reservation" class="nav__link">Reservar una mesa</a>
             </li>
             <li>
-              <a href="#contacts" class="nav__link">Contactos</a>
+              <a href="#contact-us" class="nav__link">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -104,73 +103,111 @@
             </div>
           </div>
         </section>
-        <!--Inicio de la seccion 3 de formulario-->
-        <section id="reservation" class="reservation">
+
+        <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
-          <form class="form reservation__form">
-            <fieldset class="form form__fieldset">
-              <label for="nombre" class="form__label">Nombre</label>
-              <input
-                type="text"
-                placeholder="Nombre"
-                name="booking"
-                id="nombre"
-                required
-                class="form__input"
-              />
-              <label for="comensales" class="form__label"
-                >Número de comensales</label
-              >
-              <input
-                type="number"
-                placeholder="1-8"
-                name="booking"
-                id="comensales"
-                min="1"
-                max="8"
-                required
-                class="form__input"
-              />
-              <label for="date" class="form__label">Fecha y hora</label>
-              <input
-                type="date"
-                name="booking"
-                id="date"
-                required
-                class="form__input"
-              />
-              <label for="email" class="form__label"
-                >Tu correo electrónico</label
-              >
-              <input
-                type="email"
-                name="booking"
-                id="email"
-                required
-                placeholder="email@email.com"
-                class="form__input"
-              />
-              <button type="submit" class="form__button">
-                Reservar una mesa
-              </button>
-              <fieldset class="form__label-checkbox">
-                <label for="terms" class="0>
-                  <input
-                    type="checkbox"
-                    name="booking"
-                    id="terms"
-                    value="terms"
-                    required
-                    class="form__checkbox"
-                  /><span>Acepto los términos de uso</span>
-                </label>
+          <div class="form__container">
+            <form action="#" class="form reservation__form">
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="name">Nombre *</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                />
+                <label class="form__label" for="diner"
+                  >Número de comensales *</label
+                >
+                <input
+                  class="form__input"
+                  type="number"
+                  id="diner"
+                  name="diner"
+                  min="1"
+                  max="8"
+                  placeholder="1-8"
+                  required
+                />
+                <label class="form__label" for="date">Fecha y hora *</label>
+                <input
+                  class="form__input"
+                  type="datetime-local"
+                  id="date"
+                  name="date"
+                  required
+                />
+                <label class="form__label" for="email"
+                  >Tu correo electrónico *</label
+                >
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
               </fieldset>
-            </fieldset>
-          </form>
+              <fieldset class="form__fieldset">
+                <button class="form__button" type="submit">
+                  Reservar una mesa
+                </button>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset_el_center">
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  id="checkbox"
+                  name="checkbox"
+                  required
+                />
+                <label
+                  class="form__label form__label_direction_right"
+                  for="checkbox"
+                  >Acepto los términos de uso *</label
+                >
+              </fieldset>
+            </form>
+          </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer__circle"></div>
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="logo de cafeteria"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="logo facebook"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="logo instagram"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="footer__copyright">&#x00a9; 2024 Elena Arceo</p>
+        </div>
+      </footer>
     </div>
-    <!--Div del envontorio class page abajo de body-->
   </body>
 </html>
